@@ -4,8 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dataset
-file_path = "C:\\Personal\\USC ADS\\DSCI 510\\_Project\\wildata\\wildlife-insights_de567727-c38d-46a5-b39f-6dee9fb42e97_all-platform-data\\images.csv"
-df = pd.read_csv(file_path)
+df = pd.read_csv("images.csv")
 
 # Convert timestamp to datetime with error handling
 df['timestamp'] = pd.to_datetime(df['timestamp'], errors='coerce')
